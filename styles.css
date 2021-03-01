@@ -1,0 +1,30 @@
+body {
+    margin: 10px 100px;
+}
+
+p {
+    width: 600px;
+}
+
+p {
+    font-size: 18px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.fundocinza {
+    background-color: rgb(198, 207, 216);
+    text-align: justify;
+}
+
+.alinhamento {
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: right;
+        align-items: flex-end;
+        text-align: justify;
+}
