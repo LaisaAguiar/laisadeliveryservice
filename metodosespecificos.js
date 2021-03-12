@@ -151,5 +151,14 @@ const priori = colaboradores.slice().sort((a, b) => {
 })
 console.log(priori)
 
+//letra d
+const desempate = colaboradores.slice().sort((a, b) => {
+    if ((a.idade - b.idade) < 0)
+        return -1
+    else if (a.idade = b.idade)
+        return posicao[a.cargo] - posicao[b.cargo]
+})
 
+console.log(desempate)
+  //deu erro na marcia e jessica, pq?
 
