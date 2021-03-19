@@ -1,0 +1,13 @@
+{
+  "name": "package_manager",
+  "version": "1.0.0",
+  "description": "aula 19_gerenciamento de pacotes e modulos",
+  "main": "index.js",
+  "author": "Laisa Aguiar",
+  "license": "MIT",
+  "type": "module",
+  "private": false,
+  "dependencies": {
+    "date-fns": "^2.19.0"
+  }
+}
