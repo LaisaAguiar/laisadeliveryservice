@@ -1,60 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
-import { useState } from "react";
-import Button from './Button';
-import {useEffect} from "react";
+import React from "react";
+import Home from './Home';
+import Comments from './Comments';
+import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
+
 
 function App() {
- 
-  const [texto, setText]= useState("Learn More")
-  const [titulo, setTitulo] = useState("")
 
-  function handleClick() {
-    console.log('Cliquei no botão')
-  };
-  
-  function ChangeText() {
-setText("Aprenda React aqui");
-  };
-
-  function handleClickh1() {
-setTitulo("Desafio Aula 20: React pt. 1");
-  }
-
-  useEffect(() => {
-    if(texto!=="Learn More") {
-      console.log("Texto do anchor mudou");
-    }
-
-  }, [texto]);
-
-
-  return (
-    <div className="App">
-      <header className="App-header">
-        <h1>{titulo}</h1>
-
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-          >
-            {texto}
-        </a>
-       
-       
-        <Button handleClick={ChangeText} texto_botao="Muda o texto"/>
-        <Button handleClick={handleClick} texto_botao="Número de cliques"/>
-        <Button handleClick={handleClickh1} texto_botao="Adiciona título"/> 
-      </header>
-
-    </div>
+  return ( 
+    <div>
+<Router>
+<Switch>
+<Route path="/home">
+<Home />
+</Route>
+<Route path="/comments">
+  <Comments />
+</Route>
+<Route path="/">
+<Home />
+</Route>
+</Switch>
+</Router>
+</div>
   );
+
+ 
 }
 
 export default App;
