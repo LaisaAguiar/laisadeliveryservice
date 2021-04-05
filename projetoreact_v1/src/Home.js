@@ -18,7 +18,7 @@ function Home () {
     };
   
     function handleClickh1() {
-  setTitulo("Desafio Aula 20 - React pt. 1");
+  setTitulo("Desafio - React");
     }
   
     useEffect(() => {
@@ -48,9 +48,9 @@ function Home () {
         </a>
        
        
-        <Button handleClick={ChangeText} texto_botao="muda texto"/>
-        <Button handleClick={handleClick} texto_botao="cliques"/>
-        <Button handleClick={handleClickh1} texto_botao="adiciona título"/> 
+        <Button handleClick={ChangeText} texto_botao="Muda o texto"/>
+        <Button handleClick={handleClick} texto_botao="Numero de cliques"/>
+        <Button handleClick={handleClickh1} texto_botao="Adiciona título"/> 
       </header>
 
     </div>

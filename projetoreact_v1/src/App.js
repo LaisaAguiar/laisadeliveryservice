@@ -1,6 +1,9 @@
 import React from "react";
 import Home from './Home';
 import Comments from './Comments';
+import CreatePost from './CreatePost';
+import { ToastContainer} from "react-toastify"
+import 'react-toastify/dist/ReactToastify.min.css'
 import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
 
 
@@ -10,6 +13,9 @@ function App() {
     <div>
 <Router>
 <Switch>
+<Route path="/create-post">
+  <CreatePost />
+</Route>
 <Route path="/home">
 <Home />
 </Route>
@@ -20,6 +26,7 @@ function App() {
 <Home />
 </Route>
 </Switch>
+<ToastContainer/>
 </Router>
 </div>
   );
